@@ -5,7 +5,7 @@ What if the string is empty? Then the result should be empty object literal, {}.
 */
 
 function count (string) {
-    let result = {}
+    let result = {};
     const arr = string.split("");
     for(i = 0; i < arr.length; i++) {
         if(!result[arr[i]]) {
