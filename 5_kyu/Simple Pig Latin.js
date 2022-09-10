@@ -17,10 +17,9 @@ pigIt('Hello world !');     // elloHay orldway !
 
 
 function pigIt(str){
-    const result = str.split(" ").map((e) => {
-        return e.slice(1) + e.substr(0, 1)
+    const result = str.split(' ').map((e) => {
+        return e.slice(1) + e.charAt(0) + 'ay';
     })
-    return result
+    return result.join(' ');
 }
 
-console.log(pigIt("Hello world"));
